@@ -1,0 +1,202 @@
+@font-face {
+  font-family: "InterExtraLight";
+  src: url("fonts/Inter-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "InterRegular";
+  src: url("fonts/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "InterMedium";
+  src: url("fonts/Inter-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "InterSemiBold";
+  src: url("fonts/Inter-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "InterBlack";
+  src: url("fonts/Inter-Black.ttf") format("truetype");
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f8;
+}
+
+header {
+  background-color: #f7f7f8;
+  padding: 23px 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  padding-left: 80px;
+  font-size: 24px;
+  color: #0b66c2;
+}
+
+.logo1 {
+  font-family: "InterBlack";
+}
+
+.logo2 {
+  font-family: "InterExtraLight";
+}
+
+header nav {
+  padding-right: 80px;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  color: #5e6670;
+}
+
+header nav ul li a:hover {
+  color: #0b66c2;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 50px 80px;
+  width: 90%;
+  height: 90%;
+}
+
+.right_side {
+  text-align: right;
+  width: 40vw;
+  height: 100%;
+}
+
+img {
+  padding-top: 95px;
+}
+
+main .left_side {
+  text-align: left;
+}
+
+main h1 {
+  font-size: 56px;
+  font-family: "InterMedium";
+  color: #18191c;
+  margin-bottom: 0;
+}
+
+.result_text {
+  font-size: 60px;
+  font-family: "InterBlack";
+  color: #0b66c2;
+  margin-bottom: 0;
+}
+
+main p {
+  font-size: 18px;
+  font-family: "InterRegular";
+  color: #5e6670;
+  margin-top: 23px;
+}
+
+form {
+  padding-top: 30px;
+}
+
+.form_fields {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  width: 45vw;
+  height: 35vh;
+  border: none;
+}
+
+.form_fields input {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  width: calc(100% - 20px);
+  border-radius: 5px;
+}
+
+.form_fields p {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  width: calc(100% - 20px);
+  border-radius: 5px;
+}
+
+.buttons {
+  margin-top: 48px;
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  width: 45vw;
+  height: 50px;
+  font-size: 16px;
+  font-family: "InterSemiBold";
+}
+
+button {
+  background-color: #0b66c2;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #06519b;
+}
+
+button[type="reset"] {
+  background-color: #f7f7f8;
+  border: 1px solid #0b66c2;
+  color: #0b66c2;
+}
+button[type="reset"]:hover {
+  background-color: #0b67c235;
+}
+main a {
+  width: 200px;
+  font-size: 16px;
+  font-family: "InterSemiBold";
+  background-color: #f7f7f8;
+  border: 1px solid #0b66c2;
+  border-radius: 5px;
+  color: #0b66c2;
+  text-decoration: none;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+}
+main a:hover {
+  background-color: #0b67c235;
+}

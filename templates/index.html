@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fake Job Detector</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <span class="logo1">Job</span><span class="logo2">Guard</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Results</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="left_side">
+        <h1>Fake Job Detector</h1>
+        <p>Protect yourself from fraudulent job postings.</p>
+        <form action="/submit" method="post">
+          <div class="form_fields">
+            <input
+              type="text"
+              name="job_title"
+              placeholder="Job title ..."
+              required
+            />
+            <input type="text" name="location" placeholder="Location ..." />
+            <input type="text" name="department" placeholder="Department ..." />
+            <input
+              type="text"
+              name="salary_range"
+              placeholder="Salary Range ..."
+            /><input
+              type="text"
+              name="company_profile"
+              placeholder="Company Profile ..."
+            /><input
+              type="text"
+              name="description"
+              placeholder="Description ..."
+            /><input
+              type="text"
+              name="requirements"
+              placeholder="Requirements ..."
+            />
+            <input
+              type="text"
+              name="benefits"
+              placeholder="Benefits ..."
+            /><input
+              type="text"
+              name="has_logo"
+              placeholder="Has Logo ..."
+            /><input
+              type="text"
+              name="has_questions"
+              placeholder="Has Questions ..."
+            />
+          </div>
+          <div class="buttons">
+            <button type="submit">Submit For Verification</button>
+            <button type="reset">Clear Fields</button>
+          </div>
+        </form>
+      </div>
+      <div class="righ_side">
+        <img
+          src="{{ url_for('static', filename='g10.png') }}"
+          alt="Image Description"
+        />
+      </div>
+    </main>
+  </body>
+</html>

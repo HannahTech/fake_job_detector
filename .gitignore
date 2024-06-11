@@ -1,6 +1,6 @@
 UX_Design.fig
 Data/Cleaning/Fake/Job/Posting-Copy1.py
-venv
+venv/
 train_model.py
 .DS_Store
 static/.DS_Store

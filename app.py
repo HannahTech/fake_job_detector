@@ -2,20 +2,20 @@ from flask import Flask, render_template, request
 import joblib
 import string
 from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords
+# from nltk.corpus import stopwords
 
 app = Flask(__name__)
 
 model = joblib.load('best_job_classifier_model.pkl')
 
-stop_words = set(stopwords.words('english'))
+# stop_words = set(stopwords.words('english'))
 
 def preprocess_text(text):
     if isinstance(text, str):
         text = text.lower()
         text = text.translate(str.maketrans('', '', string.punctuation))
         tokens = word_tokenize(text)
-        tokens = [word for word in tokens if word not in stop_words]
+        # tokens = [word for word in tokens if word not in stop_words]
         processed_text = ' '.join(tokens)
         return processed_text
     else:

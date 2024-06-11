@@ -35,3 +35,5 @@ urllib3==2.2.1
 Werkzeug==3.0.3
 zipp==3.19.2
 zope.interface==6.2
+gunicorn== 22.0.0
+

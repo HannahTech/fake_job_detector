@@ -133,7 +133,7 @@ form {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
   width: 45vw;
-  height: 35vh;
+  height: 40vh;
   border: none;
 }
 
@@ -199,4 +199,20 @@ main a {
 }
 main a:hover {
   background-color: #0b67c235;
+}
+
+.styled-select {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 12px;
+  font-family: "InterRegular";
+  color: #5e6670;
+}
+
+.titles {
+  color: #171819;
+  font-weight: bold;
 }

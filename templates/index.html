@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -41,32 +42,60 @@
               type="text"
               name="salary_range"
               placeholder="Salary Range ..."
-            /><input
+            />
+            <input
               type="text"
               name="company_profile"
               placeholder="Company Profile ..."
-            /><input
+            />
+            <input
               type="text"
               name="description"
               placeholder="Description ..."
-            /><input
+            />
+            <input
               type="text"
               name="requirements"
               placeholder="Requirements ..."
             />
+            <input type="text" name="benefits" placeholder="Benefits ..." />
             <input
               type="text"
-              name="benefits"
-              placeholder="Benefits ..."
-            /><input
-              type="text"
-              name="has_logo"
-              placeholder="Has Logo ..."
-            /><input
-              type="text"
-              name="has_questions"
-              placeholder="Has Questions ..."
+              name="telecommuting"
+              placeholder="Telecommuting ..."
             />
+            <input
+              type="text"
+              name="employment_type"
+              placeholder="Employment Type ..."
+            />
+            <input
+              type="text"
+              name="required_experience"
+              placeholder="Required experience ..."
+            />
+            <input
+              type="text"
+              name="Required education"
+              placeholder="Required education ..."
+            />
+            <input type="text" name="industry" placeholder="Industry ..." />
+            <input type="text" name="function" placeholder="Function ..." />
+
+            <select name="has_logo" id="has_logo" class="styled-select">
+              <option value="" selected hidden>Has Logo ...</option>
+              <option value="1">Yes</option>
+              <option value="0">No</option>
+            </select>
+            <select
+              name="has_questions"
+              id="has_questions"
+              class="styled-select"
+            >
+              <option value="" selected hidden>Has Questions ...</option>
+              <option value="1">Yes</option>
+              <option value="0">No</option>
+            </select>
           </div>
           <div class="buttons">
             <button type="submit">Submit For Verification</button>
@@ -74,7 +103,7 @@
           </div>
         </form>
       </div>
-      <div class="righ_side">
+      <div class="right_side">
         <img
           src="{{ url_for('static', filename='g10.png') }}"
           alt="Image Description"

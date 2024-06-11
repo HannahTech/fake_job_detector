@@ -28,18 +28,42 @@
         <h1>This Job is <strong class="result_text">{{ result }}</strong></h1>
         <div class="form_fields">
           <div>
-            <p><strong>Job Title:</strong> {{ job_title }}</p>
-            <p><strong>Location:</strong> {{ location }}</p>
-            <p><strong>Department:</strong> {{ department }}</p>
-            <p><strong>Company Profile:</strong> {{ company_profile }}</p>
-            <p><strong>Requirements:</strong> {{ requirements }}</p>
+            <p><span class="titles">Job Title:</span> {{job_title }}</p>
+            <p><span class="titles">Location:</span> {{ location }}</p>
+            <p><span class="titles">Department:</span> {{ department }}</p>
+            <p>
+              <span class="titles">Company Profile:</span> {{ company_profile }}
+            </p>
+            <p><span class="titles">Requirements:</span> {{ requirements }}</p>
+            <p>
+              <span class="titles">Required experience:</span> {{
+              required_experience }}
+            </p>
+            <p><span class="titles">Function:</span> {{ function }}</p>
+
+            <p><span class="titles">Has Logo:</span> {{ has_logo }}</p>
           </div>
           <div>
-            <p><strong>Salary Range:</strong> {{ salary_range }}</p>
-            <p><strong>Description:</strong> {{ description }}</p>
-            <p><strong>Benefits:</strong> {{ benefits }}</p>
-            <p><strong>Has Logo:</strong> {{ has_logo }}</p>
-            <p><strong>Has Questions:</strong> {{ has_questions }}</p>
+            <p><span class="titles">Salary Range:</span> {{ salary_range }}</p>
+            <p><span class="titles">Description:</span> {{ description }}</p>
+            <p><span class="titles">Benefits:</span> {{ benefits }}</p>
+
+            <p>
+              <span class="titles">Telecommuting:</span> {{ telecommuting }}
+            </p>
+            <p>
+              <span class="titles">Employment type:</span> {{ employment_type }}
+            </p>
+
+            <p>
+              <span class="titles">Required education:</span> {{
+              required_education }}
+            </p>
+            <p><span class="titles">Industry:</span> {{ industry }}</p>
+
+            <p>
+              <span class="titles">Has Questions:</span> {{ has_questions }}
+            </p>
           </div>
         </div>
       </div>
@@ -54,8 +78,8 @@
         <div>
           <img
             style="width: 200px"
-            src="{{ url_for('static', filename='fake.png') }}"
-            alt="fakeImage"
+            src="{{ url_for('static', filename='fake.png') if result == 'Fake' else url_for('static', filename='real.png') }}"
+            alt="{{ 'fakeImage' if result == 'Fake' else 'realImage' }}"
           />
         </div>
         <a href="/">Check another job</a>

@@ -1,0 +1,90 @@
+altgraph @ file:///AppleInternal/Library/BuildRoots/860631e9-c1c5-11ee-98ee-b6ef2fd8d87b/Library/Caches/com.apple.xbs/Sources/python3/altgraph-0.17.2-py2.py3-none-any.whl
+attrs==23.2.0
+Automat==22.10.0
+beautifulsoup4==4.12.3
+blinker==1.8.2
+bs4==0.0.2
+certifi==2024.2.2
+charset-normalizer==3.3.2
+click==8.1.7
+constantly==23.10.4
+Flask==3.0.3
+future @ file:///AppleInternal/Library/BuildRoots/860631e9-c1c5-11ee-98ee-b6ef2fd8d87b/Library/Caches/com.apple.xbs/Sources/python3/future-0.18.2-py3-none-any.whl
+hyperlink==21.0.0
+idna==3.6
+importlib_metadata==7.1.0
+incremental==22.10.0
+itsdangerous==2.2.0
+Jinja2==3.1.4
+joblib==1.4.2
+macholib @ file:///AppleInternal/Library/BuildRoots/860631e9-c1c5-11ee-98ee-b6ef2fd8d87b/Library/Caches/com.apple.xbs/Sources/python3/macholib-1.15.2-py2.py3-none-any.whl
+MarkupSafe==2.1.5
+nltk==3.8.1
+np==1.0.2
+numpy==1.26.4
+pandas==2.2.1
+python-dateutil==2.9.0.post0
+pytz==2024.1
+regex==2024.5.15
+requests==2.31.0
+requests-threads==0.1.1
+scikit-learn==1.5.0
+scipy==1.13.1
+six @ file:///AppleInternal/Library/BuildRoots/860631e9-c1c5-11ee-98ee-b6ef2fd8d87b/Library/Caches/com.apple.xbs/Sources/python3/six-1.15.0-py2.py3-none-any.whl
+sklearn==0.0
+soupsieve==2.5
+threadpoolctl==3.5.0
+tqdm==4.66.4
+Twisted==24.3.0
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+Werkzeug==3.0.3
+zipp==3.19.2
+zope.interface==6.2
+altgraph @ file:///AppleInternal/Library/BuildRoots/860631e9-c1c5-11ee-98ee-b6ef2fd8d87b/Library/Caches/com.apple.xbs/Sources/python3/altgraph-0.17.2-py2.py3-none-any.whl
+attrs==23.2.0
+Automat==22.10.0
+beautifulsoup4==4.12.3
+blinker==1.8.2
+bs4==0.0.2
+certifi==2024.2.2
+charset-normalizer==3.3.2
+click==8.1.7
+constantly==23.10.4
+Flask==3.0.3
+future @ file:///AppleInternal/Library/BuildRoots/860631e9-c1c5-11ee-98ee-b6ef2fd8d87b/Library/Caches/com.apple.xbs/Sources/python3/future-0.18.2-py3-none-any.whl
+gunicorn==22.0.0
+hyperlink==21.0.0
+idna==3.6
+importlib_metadata==7.1.0
+incremental==22.10.0
+itsdangerous==2.2.0
+Jinja2==3.1.4
+joblib==1.4.2
+macholib @ file:///AppleInternal/Library/BuildRoots/860631e9-c1c5-11ee-98ee-b6ef2fd8d87b/Library/Caches/com.apple.xbs/Sources/python3/macholib-1.15.2-py2.py3-none-any.whl
+MarkupSafe==2.1.5
+nltk==3.8.1
+np==1.0.2
+numpy==1.26.4
+packaging==24.1
+pandas==2.2.1
+python-dateutil==2.9.0.post0
+pytz==2024.1
+regex==2024.5.15
+requests==2.31.0
+requests-threads==0.1.1
+scikit-learn==1.5.0
+scipy==1.13.1
+six @ file:///AppleInternal/Library/BuildRoots/860631e9-c1c5-11ee-98ee-b6ef2fd8d87b/Library/Caches/com.apple.xbs/Sources/python3/six-1.15.0-py2.py3-none-any.whl
+sklearn==0.0
+soupsieve==2.5
+threadpoolctl==3.5.0
+tqdm==4.66.4
+Twisted==24.3.0
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+Werkzeug==3.0.3
+zipp==3.19.2
+zope.interface==6.2

@@ -34,6 +34,18 @@ def shorten_text(text):
 def home():
     return render_template('index.html')
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/check')
+def check():
+    return render_template('check.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
 @app.route('/submit', methods=['POST'])
 def submit():
     job_title = request.form.get('job_title')

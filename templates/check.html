@@ -1,0 +1,115 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fake Job Detector</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <span class="logo1">Safe</span><span class="logo2">Hire</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="{{ url_for('home') }}">Home</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+          <li><a href="{{ url_for('check') }}">Check Job</a></li>
+          <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="left_side">
+        <h1>Fake Job Detector</h1>
+        <p>Protect yourself from fraudulent job postings.</p>
+        <form action="/submit" method="post">
+          <div class="form_fields">
+            <input
+              type="text"
+              name="job_title"
+              placeholder="Job title ..."
+              required
+            />
+            <input type="text" name="location" placeholder="Location ..." />
+            <input type="text" name="department" placeholder="Department ..." />
+            <input
+              type="text"
+              name="salary_range"
+              placeholder="Salary Range ..."
+            />
+            <input
+              type="text"
+              name="company_profile"
+              placeholder="Company Profile ..."
+            />
+            <input
+              type="text"
+              name="description"
+              placeholder="Description ..."
+            />
+            <input
+              type="text"
+              name="requirements"
+              placeholder="Requirements ..."
+            />
+            <input type="text" name="benefits" placeholder="Benefits ..." />
+            <input
+              type="text"
+              name="telecommuting"
+              placeholder="Telecommuting ..."
+            />
+            <input
+              type="text"
+              name="employment_type"
+              placeholder="Employment Type ..."
+            />
+            <input
+              type="text"
+              name="required_experience"
+              placeholder="Required experience ..."
+            />
+            <input
+              type="text"
+              name="Required education"
+              placeholder="Required education ..."
+            />
+            <input type="text" name="industry" placeholder="Industry ..." />
+            <input type="text" name="function" placeholder="Function ..." />
+
+            <select name="has_logo" id="has_logo" class="styled-select">
+              <option value="" selected hidden>Has Logo ...</option>
+              <option value="1">Yes</option>
+              <option value="0">No</option>
+            </select>
+            <select
+              name="has_questions"
+              id="has_questions"
+              class="styled-select"
+            >
+              <option value="" selected hidden>Has Questions ...</option>
+              <option value="1">Yes</option>
+              <option value="0">No</option>
+            </select>
+          </div>
+          <div class="buttons">
+            <button type="submit">Submit For Verification</button>
+            <button type="reset">Clear Fields</button>
+          </div>
+        </form>
+      </div>
+      <div class="right_side">
+        <img
+          src="{{ url_for('static', filename='g10.png') }}"
+          alt="Image Description"
+        />
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

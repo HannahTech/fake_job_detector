@@ -9,6 +9,71 @@
       rel="stylesheet"
       href="{{ url_for('static', filename='style.css') }}"
     />
+    <style>
+      main {
+        height: 83vh;
+        width: 100vw;
+        background-color: #0b66c2;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        z-index: 0;
+        gap: 0px;
+      }
+
+      main h1 {
+        font-size: 60px;
+        font-family: "InterMedium";
+        color: #f7f7f8;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 20%;
+        margin-left: 15%;
+        z-index: 2;
+      }
+      main p {
+        font-size: 24px;
+        font-family: "InterRegular";
+        color: #d2d2d2;
+        margin-top: 23px;
+        margin-bottom: 15%;
+        margin-left: 15%;
+        z-index: 2;
+      }
+
+      main a {
+        width: 200px;
+        font-size: 18px;
+        font-family: "InterSemiBold";
+        background-color: #f7f7f8;
+        border: 1px solid #0b66c2;
+        border-radius: 5px;
+        color: #0b66c2;
+        text-decoration: none;
+        margin: auto;
+        text-align: center;
+        padding: 15px 25px;
+        margin-left: 15%;
+        z-index: 2;
+      }
+      main a:hover {
+        background-color: #0b66c2;
+        border: 1px solid #f7f7f8;
+        color: #f7f7f8;
+      }
+      .right_side {
+        text-align: right;
+        width: 60vw;
+        height: 50%;
+        margin-right: 0;
+        margin-bottom: 0;
+        z-index: 1;
+      }
+      img {
+        padding-top: auto;
+        z-index: 1;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -17,95 +82,25 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Results</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="{{ url_for('home') }}">Home</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+          <li><a href="{{ url_for('check') }}">Check Job</a></li>
+          <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <div class="left_side">
-        <h1>Fake Job Detector</h1>
-        <p>Protect yourself from fraudulent job postings.</p>
-        <form action="/submit" method="post">
-          <div class="form_fields">
-            <input
-              type="text"
-              name="job_title"
-              placeholder="Job title ..."
-              required
-            />
-            <input type="text" name="location" placeholder="Location ..." />
-            <input type="text" name="department" placeholder="Department ..." />
-            <input
-              type="text"
-              name="salary_range"
-              placeholder="Salary Range ..."
-            />
-            <input
-              type="text"
-              name="company_profile"
-              placeholder="Company Profile ..."
-            />
-            <input
-              type="text"
-              name="description"
-              placeholder="Description ..."
-            />
-            <input
-              type="text"
-              name="requirements"
-              placeholder="Requirements ..."
-            />
-            <input type="text" name="benefits" placeholder="Benefits ..." />
-            <input
-              type="text"
-              name="telecommuting"
-              placeholder="Telecommuting ..."
-            />
-            <input
-              type="text"
-              name="employment_type"
-              placeholder="Employment Type ..."
-            />
-            <input
-              type="text"
-              name="required_experience"
-              placeholder="Required experience ..."
-            />
-            <input
-              type="text"
-              name="Required education"
-              placeholder="Required education ..."
-            />
-            <input type="text" name="industry" placeholder="Industry ..." />
-            <input type="text" name="function" placeholder="Function ..." />
+        <div>
+          <h1>Fake Job Detector</h1>
+          <p>Protect yourself from fraudulent job postings.</p>
+        </div>
 
-            <select name="has_logo" id="has_logo" class="styled-select">
-              <option value="" selected hidden>Has Logo ...</option>
-              <option value="1">Yes</option>
-              <option value="0">No</option>
-            </select>
-            <select
-              name="has_questions"
-              id="has_questions"
-              class="styled-select"
-            >
-              <option value="" selected hidden>Has Questions ...</option>
-              <option value="1">Yes</option>
-              <option value="0">No</option>
-            </select>
-          </div>
-          <div class="buttons">
-            <button type="submit">Submit For Verification</button>
-            <button type="reset">Clear Fields</button>
-          </div>
-        </form>
+        <a href="{{ url_for('check') }}">Submit For Verification</a>
       </div>
       <div class="right_side">
         <img
-          src="{{ url_for('static', filename='g10.png') }}"
+          src="{{ url_for('static', filename='1.png') }}"
           alt="Image Description"
         />
       </div>

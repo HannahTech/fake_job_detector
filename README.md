@@ -27,6 +27,10 @@ The repository contains the following files:
 - `requirements.txt`: List of Python dependencies required to run the web application.
 - `README.md`: Overview of the project.
 
+## Data Visualization
+![image](https://github.com/HannahTech/fake_job_detector/assets/81828685/ac442dce-ba32-4338-b298-b8cc646beb18)
+
+
 ## 🛠️ Training the Model
 
 To train the model, run the `train_model.py` script. This script reads data from a CSV file (`fake_job_postings.csv`), preprocesses the text data, and trains a RandomForestClassifier model. The trained model is then saved as `best_job_classifier_model.pkl`.

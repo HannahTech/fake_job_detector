@@ -30,6 +30,8 @@ The repository contains the following files:
 ## Data Visualization
 ![image](https://github.com/HannahTech/fake_job_detector/assets/81828685/ac442dce-ba32-4338-b298-b8cc646beb18)
 
+for more information:
+https://public.tableau.com/app/profile/hengameh.khajehpour/viz/Real_Fake_Job/Dashboard1?publish=yes
 
 ## 🛠️ Training the Model
 
